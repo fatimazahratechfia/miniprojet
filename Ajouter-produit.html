@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <section id ="header">
+        <a href="#"><img src="logo.jpg" class ="logo" alt=""width="90px"></a>
+    <dev>
+        <ul id ="navbar">
+            <li><a   href="index.html">Accueil</a></li>
+            <li><a href="produits.html">Produits</a></li>
+            <li><a href="a-props.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active">Ajouter un produit</a></li>
+            
+        </ul>
+    </dev>
+    </section>
+    <section id="formulaire-ajout-produit">
+        <h2>Ajouter un Produit</h2>
+        <form action="#" method="POST">
+            <label for="nom-produit">Nom du Produit:</label>
+            <input type="text" id="nom-produit" name="nom-produit" required><br>
+
+            <label for="description-produit">Description:</label><br>
+            <textarea id="description-produit" name="description-produit" rows="4" cols="50"></textarea><br>
+
+            <label for="prix-produit">Prix:</label>
+            <input type="number" id="prix-produit" name="prix-produit" min="0" step="0.01" required><br>
+
+            <label for="quantite-produit">Quantité en stock:</label>
+            <input type="number" id="quantite-produit" name="quantite-produit" min="0" required><br>
+
+            <button type="submit">Ajouter</button>
+        </form>
+    </section>
+    <footer class="section-p1">
+        <div class="copyright">
+            <p> @2024,les produits 100% BIO</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
